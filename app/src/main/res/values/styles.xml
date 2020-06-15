@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorOnSurface">#cacaca</item>
+        <item name="shapeAppearance">@style/MSmallComponent</item>
+        <item name="textInputStyle">@style/TextInputLayoutStyle</item>
+        <item name="colorOnSecondary">#cacaca</item>
+    </style>
+
+    <style name="SubmitButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">?attr/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">?attr/colorAccent</item>
+        <item name="shapeAppearance">@style/MSmallComponent</item>
+    </style>
+
+    <style name="MSmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorTextColor">#cacaca</item>
+        <item name="errorIconTint">@color/error_icon_color</item>
+        <item name="android:background">#00000000</item>
+        <item name="boxBackgroundColor">#00000000</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="hintTextAppearance">@style/ErrorTextAppearance</item>
+        <item name="errorTextAppearance">@style/ErrorTextAppearance</item>
+    </style>
+
+    <style name="ErrorTextAppearance" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+</resources>
